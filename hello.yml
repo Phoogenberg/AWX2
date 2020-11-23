@@ -2,7 +2,7 @@
 - hosts: all
   become: true
   gather_facts: true
-  collections: community.mysql
+  collections: community.mysql.mysql_info
   tasks:
     - name: install prerequisites
       apt:
