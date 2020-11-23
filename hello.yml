@@ -29,3 +29,11 @@
       apt:
         pkg:
           - mysql-server
+          - python3-pip
+          - libmysqlclient-dev
+          - python3-dev
+          - python3-mysqldb
+          
+    - name: collection
+      collection.mysql.mysql_info
+        login_user: root
