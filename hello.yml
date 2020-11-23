@@ -35,5 +35,5 @@
           - python3-mysqldb
           
     - name: collection
-      collection.mysql.mysql_info
+      collection.mysql.mysql_info:
         login_user: root
