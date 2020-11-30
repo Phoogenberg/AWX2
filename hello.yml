@@ -37,7 +37,11 @@
           
     - name: Collect all
       community.mysql.mysql_info:
-        login_user: root 
+        login_user: root
+      register: results
+    - name: collect  
+      debug:
+        vars: results
         
     - name: Collect info about databases and version using ~/.my.cnf as a credential file
       become: yes
