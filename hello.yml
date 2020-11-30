@@ -38,7 +38,7 @@
 #     - name: Collect all
 #       community.mysql.mysql_info:
 #         login_user: root
-     - name: Collect info about databases and version using ~/.my.cnf as a credential file
+     - name: Collect info
        become: yes
        community.mysql.mysql_info:
          filter:
