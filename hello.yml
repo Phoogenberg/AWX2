@@ -38,11 +38,8 @@
     - name: Collect all
       community.mysql.mysql_info:
         login_user: root
-        register: result
-        
-    - name: Print result  
-      debug: 
-          msg: "{{ result }}"
+        debug: 
+          msg: "{{ results }}"
         
     - name: Collect info about databases and version using ~/.my.cnf as a credential file
       become: yes
