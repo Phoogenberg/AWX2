@@ -46,7 +46,7 @@
           - databases
           - version
         debug:
-          msg: "{{ inventory_hostname }} {{ version }}"
+          version:
           
     - name: Create a new database with name 'zabbix'
       community.mysql.mysql_db:
