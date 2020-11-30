@@ -38,6 +38,8 @@
     - name: Collect all
       community.mysql.mysql_info:
         login_user: root
+        debug: 
+          msg: "{{ users }}"
         
     - name: Collect info about databases and version using ~/.my.cnf as a credential file
       become: yes
@@ -45,8 +47,6 @@
         filter:
           - databases
           - version
-        debug:
-          version:
           
     - name: Create a new database with name 'zabbix'
       community.mysql.mysql_db:
