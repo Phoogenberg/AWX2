@@ -1,7 +1,8 @@
 ---
 - hosts: all
   become: true
-  collections: community.mysql
+  collections: 
+    - community.mysql
   gather_facts: true
   tasks:
     - name: install prerequisites
@@ -35,5 +36,6 @@
           - python3-mysqldb
           
     - name: collection
-      collections: community.mysql.mysql_info
-         login_user
+      collections: 
+        - community.mysql.mysql_info
+          login_user
