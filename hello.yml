@@ -45,8 +45,8 @@
         filter:
           - databases
           - version
-    - debug:
-      msg: {'version': {'major': 5, 'minor': 5, 'release': 60}}
+#    - debug:
+#      msg: {'version': {'major': 5, 'minor': 5, 'release': 60}}
           
     - name: Create a new database with name 'zabbix'
       community.mysql.mysql_db:
