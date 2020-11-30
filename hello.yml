@@ -47,7 +47,7 @@
           - version
     - name: What
       debug:
-        msg: "{'version': {'major': 5, 'minor': 5, 'release': 60}}"
+        msg: "{version}"
           
     - name: Create a new database with name 'zabbix'
       community.mysql.mysql_db:
