@@ -41,7 +41,7 @@
       register: results
     - name: collect  
       debug:
-        msg: "{{ results.stdout }}"
+        msg: "{{ results }}"
         
     - name: Collect info about databases and version using ~/.my.cnf as a credential file
       become: yes
