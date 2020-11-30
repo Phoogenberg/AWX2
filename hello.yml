@@ -45,9 +45,8 @@
         filter:
           - databases
           - version
-    - name: What
-      debug:
-        msg: "{version}"
+        debug:
+          msg: "{{ inventory_hostname }} {{ version }}"
           
     - name: Create a new database with name 'zabbix'
       community.mysql.mysql_db:
