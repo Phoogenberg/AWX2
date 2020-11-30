@@ -38,6 +38,7 @@
     - name: Collect all
       community.mysql.mysql_info:
         login_user: root
+        register: result
         debug: 
           msg: "{{ result }}"
         
