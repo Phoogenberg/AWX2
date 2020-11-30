@@ -35,12 +35,7 @@
           - python3-dev
           - python3-mysqldb
           
-#     - name: Collect all
-#       community.mysql.mysql_info:
-#         login_user: root
-     - name: Collect info
-       become: yes
-       community.mysql.mysql_info:
-         filter:
-           - databases
-           - version
+    - name: Collect all
+      community.mysql.mysql_info:
+        login_user: root
+
