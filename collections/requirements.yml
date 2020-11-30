@@ -1,4 +1,3 @@
 ---
 collections:
   - community.mysql
-    src: https://github.com/ansible-collections/community.mysql
