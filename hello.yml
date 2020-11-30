@@ -1,6 +1,6 @@
 ---
 - hosts: all
-#  collections: community.mysql
+  collections: community.mysql
   become: true
   gather_facts: true
   tasks:
@@ -35,5 +35,5 @@
           - python3-mysqldb
           
     - name: collection
-      collections: collection.mysql.mysql_info
+      collections: community.mysql.mysql_info
          login_user
