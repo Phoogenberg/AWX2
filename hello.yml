@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  collections: community.mysql
+#  collections: community.mysql
   become: true
   gather_facts: true
   tasks:
