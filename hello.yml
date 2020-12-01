@@ -53,4 +53,12 @@
     - name: Create a new database with name 'zabbix'
       community.mysql.mysql_db:
         name: zabbix
+        encoding: utf8
+        state: present
+        
+    - name: Create database user with name 'bob' and password '12345' with all database privileges
+      community.mysql.mysql_user:
+        name: zabbix
+        password: 12345
+        priv: '*.*:ALL'
         state: present
